@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上中下式布局</title>
+</head>
+<style type="text/css">
+    *{margin:0;padding: 0;}
+	.top{height: 100px;width: 100%;background: #333;}
+	.mycontent{
+		min-height: 400px;
+		height: 100%;
+	}
+	.mid{min-height:calc(100vh - 200px);width: 100%;background-image: url(1.jpg);-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;}
+	.bot{height: 100px;width: 100%;background: #222;}
+</style>
+<body>
+    <div class="top">上</div>
+	<div class="mid">
+		<div class="mycontent"></div>
+	</div>
+	<div class="bot">下</div>
+</body>
+</html>
